@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governo Federal</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+    País de nascimento: <input type = 'text' name = 'nac' id = 'txtnac'>
+    <input type = 'button' value = 'Verificar' onclick = 'analisar()'>
+    <div id = 'res'>
+    </div>
+
+    <script> 
+        function analisar() {
+         var nac = document.getElementById('txtnac')
+         var res = document.getElementById('res')
+         if (nac = 'Brasil') {
+             res.innerHTML += `<p> Você nasceu no <strong>Brasil</strong>. Logo, você é <strong>brasileiro</strong>!</p>`
+         } 
+         else {
+             res.innerHTML += `<p> Você não nasceu no Brasil. Logo, você é <strong>estrangeiro</strong>!</p>`
+         }
+         res.innerHTML += `<p>Esse é o fim do programa, obrigada por utilizá-lo! </p>`
+        }
+         
+    </script>
+</body>
+</html>
